@@ -10,6 +10,7 @@
 		DF9BBE6124C835A700065EFC /* ScrollableBottomSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF9BBE5724C835A700065EFC /* ScrollableBottomSheet.framework */; };
 		DF9BBE6624C835A700065EFC /* ScrollableBottomSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BBE6524C835A700065EFC /* ScrollableBottomSheetTests.swift */; };
 		DF9BBE6824C835A700065EFC /* ScrollableBottomSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = DF9BBE5A24C835A700065EFC /* ScrollableBottomSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9BBE7324C83A6A00065EFC /* ScrollableBottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9BBE7224C83A6A00065EFC /* ScrollableBottomSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		DF9BBE6024C835A700065EFC /* ScrollableBottomSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollableBottomSheetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9BBE6524C835A700065EFC /* ScrollableBottomSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableBottomSheetTests.swift; sourceTree = "<group>"; };
 		DF9BBE6724C835A700065EFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF9BBE7224C83A6A00065EFC /* ScrollableBottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableBottomSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		DF9BBE5924C835A700065EFC /* ScrollableBottomSheet */ = {
 			isa = PBXGroup;
 			children = (
+				DF9BBE7124C83A5300065EFC /* Views */,
 				DF9BBE5A24C835A700065EFC /* ScrollableBottomSheet.h */,
 				DF9BBE5B24C835A700065EFC /* Info.plist */,
 			);
@@ -84,6 +87,14 @@
 				DF9BBE6724C835A700065EFC /* Info.plist */,
 			);
 			path = ScrollableBottomSheetTests;
+			sourceTree = "<group>";
+		};
+		DF9BBE7124C83A5300065EFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BBE7224C83A6A00065EFC /* ScrollableBottomSheet.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				TargetAttributes = {
 					DF9BBE5624C835A700065EFC = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					DF9BBE5F24C835A700065EFC = {
 						CreatedOnToolsVersion = 11.6;
@@ -195,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF9BBE7324C83A6A00065EFC /* ScrollableBottomSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 		DF9BBE6C24C835A700065EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UR86F3FN9K;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hp1909.ScrollableBottomSheet;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		DF9BBE6D24C835A700065EFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = UR86F3FN9K;
@@ -388,6 +404,7 @@
 		DF9BBE6F24C835A700065EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR86F3FN9K;
 				INFOPLIST_FILE = ScrollableBottomSheetTests/Info.plist;
@@ -406,6 +423,7 @@
 		DF9BBE7024C835A700065EFC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UR86F3FN9K;
 				INFOPLIST_FILE = ScrollableBottomSheetTests/Info.plist;
